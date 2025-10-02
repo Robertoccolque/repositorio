@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+        /* ---- Estilos Generales ---- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #0d1b2a;
+            font-size: 2.2rem;
+        }
+
+        /* ---- NAVBAR ---- */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0d1b2a;
+            padding: 15px 40px;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            width: 55px;
+            border-radius: 8px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu li a:hover {
+            color: #00c6ff;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-hamburguesa {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* ---- Contenedor ---- */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* ---- Proyectos ---- */
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .icono {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #0d1b2a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn-proyecto {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .btn-proyecto:hover {
+            transform: scale(1.05);
+        }
+
+        /* ---- Texto central ---- */
+        p.texto-nosotros {
+            text-align: center; 
+            margin-top: 25px; 
+            font-size: 1.15rem; 
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <!-- Menú -->
+        <nav class="navbar">
+            <img src="../img/logo.jpeg" alt="logo cuadrado" class="logo">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <a href="#" class="btn">Whatsapp</a>
+            <span class="menu-hamburguesa">&#9776;</span>
+        </nav>
+
+        <p class="texto-nosotros">Esta es la página de <strong>Nosotros</strong></p>
+
+        <!-- Sección de proyectos -->
+        <h2>🚀 Nuestros Proyectos</h2>
+        <div class="proyectos">
+            <div class="card">
+                <span class="icono">🌐</span>
+                <h3>Sitio Web Empresarial</h3>
+                <p>Desarrollo de un portal web para pequeñas empresas con diseño responsivo, optimización SEO y panel de administración básico.</p>
+                <a href="#" class="btn-proyecto">Ver más</a>
+            </div>
+
+            <div class="card">
+                <span class="icono">📱</span>
+                <h3>Aplicación Web Interactiva</h3>
+                <p>Creación de una aplicación web con JavaScript moderno para gestionar tareas en tiempo real con almacenamiento local.</p>
+                <a href="#" class="btn-proyecto">Ver más</a>
+            </div>
+
+            <div class="card">
+                <span class="icono">💻</span>
+                <h3>API y Base de Datos</h3>
+                <p>Implementación de un sistema back-end con Node.js y Firebase que permite almacenar y consultar datos de forma segura y escalable.</p>
+                <a href="#" class="btn-proyecto">Ver más</a>
+            </div>
+
+            <div class="card">
+                <span class="icono">🎨</span>
+                <h3>Portafolio Creativo</h3>
+                <p>Desarrollo de un portafolio personal moderno con animaciones en CSS y efectos visuales para destacar proyectos y habilidades.</p>
+                <a href="#" class="btn-proyecto">Ver más</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

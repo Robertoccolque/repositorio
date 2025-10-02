@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="bg-primary text-white py-3 mb-4 shadow">
+        <div class="container">
+            <h1 class="mb-0">Contacto</h1>
+            <p class="mb-0">Comunícate conmigo</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Mi Sitio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Botones interactivos -->
+   
+
+    <!-- Formulario de contacto -->
+    <div class="container my-5">
+        <section id="contacto" class="card p-4 shadow-lg border-0">
+            <h2 class="mb-3 text-center text-primary">Formulario de Contacto</h2>
+            <p class="text-muted text-center">Complete el formulario para enviarme un mensaje:</p>
+
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary px-4" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 - Mi Sitio Web | Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
